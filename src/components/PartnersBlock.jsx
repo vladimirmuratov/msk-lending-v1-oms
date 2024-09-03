@@ -9,7 +9,8 @@ export const PartnersBlock = () => {
             id="partners"
             sx={{
                 scrollMarginTop: {xs: '120px', sm: '50px'},
-                paddingX: {xs: '8px', sm: '32px'},
+                // paddingX: {xs: '8px', sm: '32px'},
+                paddingX: '12px',
                 paddingY: {xs: '25px', sm: '50px'},
                 color: 'var(--black)'
             }}>
