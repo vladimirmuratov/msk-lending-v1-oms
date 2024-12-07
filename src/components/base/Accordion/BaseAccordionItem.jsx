@@ -1,4 +1,4 @@
-import {Accordion, AccordionDetails, AccordionSummary} from '@mui/material'
+import { Accordion, AccordionDetails, AccordionSummary, Typography } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
 
 export const BaseAccordionItem = ({id, question, answer}) => {
@@ -6,12 +6,11 @@ export const BaseAccordionItem = ({id, question, answer}) => {
     return(
         <Accordion>
             <AccordionSummary
-                sx={{fontWeight: 500, fontSize: 18}}
                 expandIcon={<ExpandMoreIcon/>}
                 aria-controls={`panel${id}-content`}
                 id={`panel${id}-header`}
             >
-                {question}
+                <Typography variant='h3' sx={{fontWeight: 500, fontSize: 18}}>{question}</Typography>
             </AccordionSummary>
             <AccordionDetails sx={{fontSize: 18, lineHeight: 1.5, backgroundColor: 'var(--main-color)', color: '#fff', whiteSpace: 'pre-wrap'}}>
                 {answer}
