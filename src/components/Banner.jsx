@@ -35,17 +35,19 @@ export const Banner = () => {
                 sx={{
                     width: '100%',
                     height: {
-                        xs: 'calc(var(--index) * 19)',
-                        sm: 'calc(var(--index) * 26)',
-                        md: 'calc(var(--index) * 33)',
-                        lg: 'calc(var(--index) * 33)'
+                        xs: 'calc(var(--index) * 23)',
+                        sm: 'calc(var(--index) * 23)',
+                        md: 'calc(var(--index) * 23)',
+                        lg: 'calc(var(--index) * 20)'
                     },
                     backgroundImage: `url(/images/images-for-landings/6.webp)`,
                     backgroundSize: 'cover',
                 }}
             >
                 <Box sx={{
-                    padding: '20px'
+                    position: 'absolute',
+                    top: {xs: '10%', sm: '10%'},
+                    left: '5%',
                 }}>
                     <Typography
                         variant="h1"
