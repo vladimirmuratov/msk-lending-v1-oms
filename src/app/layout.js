@@ -17,9 +17,6 @@ export const metadata = {
     keywords: ['платная госпитализация без ОМС', 'экстренная платная госпитализация в москве', 'экстренная госпитализация в стационар платно'],
     other: {
         ['yandex-verification']: 'bfbbb3def7ef9b1a',
-    },
-    alternates: {
-        canonical: 'https://oms.mskdoctor.ru/'
     }
 };
 
