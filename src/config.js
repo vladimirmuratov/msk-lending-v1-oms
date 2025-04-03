@@ -25,7 +25,7 @@ export const links = [
 export const cardsBlock = [
     {id: 1, label: 'Информация для пациентов', icon: '/images/icons/info.svg', path: '#whyWe', bgcolor: '#27DCE1'},
     {id: 2, label: 'Направления лечения', icon: '/images/icons/health.svg', path: '#directions', bgcolor: '#FF0044'},
-    {id: 3, label: 'Больницы', icon: '/images/icons/hospital.svg', path: '#partners', bgcolor: '#5000CD'},
+    {id: 3, label: 'Клиники', icon: '/images/icons/hospital.svg', path: '#partners', bgcolor: '#5000CD'},
     {id: 4, label: 'Частые вопросы', icon: '/images/icons/faq.svg', path: '#faq', bgcolor: '#FFF14B'},
 ]
 
@@ -271,4 +271,4 @@ export const partners = [
     },
 ]
 
-export const text1 = 'От выбора оптимального медицинского учреждения и компетентных специалистов, верной диагностики и качественного лечения напрямую определяется судьба пациентов. Наша задача — это не просто профессиональная деятельность, а настоящее служение спасению жизней.\nОбращаетесь за помощью для себя или близких? Оставьте заявку – предоставим подробные ответы на все ваши запросы и вопросы!'
+export const text1 = <>Выбор клиники, специалистов, точной диагностики и лечения определяет исход заболевания. Мы не просто работаем, а спасаем жизни.<br/>Нужна помощь? Оставьте заявку – ответим на все вопросы.</>

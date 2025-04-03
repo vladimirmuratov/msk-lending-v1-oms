@@ -46,7 +46,9 @@ export const Banner = () => {
             >
                 <Box sx={{
                     position: 'absolute',
-                    top: {xs: '10%', sm: '10%'},
+                    // top: {xs: '10%', sm: '10%'},
+                    top: '50%',
+                    transform: 'translateY(-50%)',
                     left: '5%',
                 }}>
                     <Typography
@@ -71,6 +73,7 @@ export const Banner = () => {
                             }}
                         >
                             <Button
+                                className="animation-btn"
                                 onClick={() => router.push(`tel:${phoneNumber}`)}
                                 variant="contained"
                                 color="error"
