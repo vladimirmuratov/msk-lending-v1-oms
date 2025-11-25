@@ -1,21 +1,32 @@
-import {Box, Link, Typography} from '@mui/material'
+import { Box, Link, Typography } from '@mui/material';
 import { email, phoneNumber, phoneNumber2 } from '@/config';
-import MapOutlinedIcon from '@mui/icons-material/MapOutlined'
-import LocalPhoneOutlinedIcon from '@mui/icons-material/LocalPhoneOutlined'
-import AlternateEmailIcon from '@mui/icons-material/AlternateEmail'
-import SocialBlock from '@/components/SocialBlock'
+import MapOutlinedIcon from '@mui/icons-material/MapOutlined';
+import LocalPhoneOutlinedIcon from '@mui/icons-material/LocalPhoneOutlined';
+import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
+import SocialBlock from '@/components/SocialBlock';
 
 export const ContactsBlock = () => {
     return (
         <Box
             component="section"
-            id='contact'
-            sx={{scrollMarginTop: {xs: '120px', sm: '50px'}, paddingX: '12px', paddingY: {xs: '25px', sm: '50px'}, color: 'var(--black)'}}
+            id="contact"
+            sx={{
+                scrollMarginTop: { xs: '120px', sm: '50px' },
+                paddingX: '12px',
+                paddingY: { xs: '25px', sm: '50px' },
+                color: 'var(--black)'
+            }}
         >
-            <Typography variant="h2" sx={{color: 'var(--main-color)', marginBottom: '20px', fontSize: {xs: '28px', sm: '34px'}, fontWeight: 500}}>Контакты</Typography>
+            <Typography variant="h2" sx={{
+                color: 'var(--main-color)',
+                marginBottom: '20px',
+                fontSize: { xs: '28px', sm: '34px' },
+                fontWeight: 500
+            }}>Контакты</Typography>
 
-            <Box sx={{display: 'grid', gridTemplateColumns: {xs: '1fr', sm: '1fr 2fr'}, gap: {xs: '10px', sm: 0}}}>
-                <Box sx={{display: 'flex', flexDirection: 'column', gap: '10px'}}>
+            <Box
+                sx={{ display: 'grid', gridTemplateColumns: { xs: '1fr', sm: '1fr 2fr' }, gap: { xs: '10px', sm: 0 } }}>
+                <Box sx={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
 
                     {/*<Box sx={{display: 'flex', gap: '10px'}}>
                         <MapOutlinedIcon sx={{color: 'var(--main-color)'}}/>
@@ -31,21 +42,24 @@ export const ContactsBlock = () => {
                                   sx={{ fontSize: { xs: '14px', sm: '16px' } }}>{phoneNumber2}</Link>
                         </Box>
                     </Box>
-                    <Box sx={{display: 'flex', gap: '10px'}}>
-                        <AlternateEmailIcon sx={{color: 'var(--main-color)'}}/>
-                        <Link href={`mailto:${email}`} sx={{fontSize: {xs: '14px', sm: '16px'}}}>{email}</Link>
+                    <Box sx={{ display: 'flex', gap: '10px' }}>
+                        <AlternateEmailIcon sx={{ color: 'var(--main-color)' }} />
+                        <Link href={`mailto:${email}`} sx={{ fontSize: { xs: '14px', sm: '16px' } }}>{email}</Link>
                     </Box>
-                    <Box sx={{paddingLeft: '34px'}}>
-                        <Typography sx={{fontSize: {xs: '14px', sm: '16px'}}}>ООО "МСК"</Typography>
-                        <Typography sx={{fontSize: {xs: '14px', sm: '16px'}}}>ИНН: 9725116009</Typography>
-                        <Typography sx={{fontSize: {xs: '14px', sm: '16px'}}}>КПП: 772501001</Typography>
-                        <Typography sx={{fontSize: {xs: '14px', sm: '16px'}}}>ОГРН: 1237700147343</Typography>
+                    <Box sx={{ paddingLeft: '34px' }}>
+                        <Typography sx={{ fontSize: { xs: '14px', sm: '16px' } }}>ООО "МСК"</Typography>
+                        <Typography sx={{ fontSize: { xs: '14px', sm: '16px' } }}>ИНН: 9725116009</Typography>
+                        <Typography sx={{ fontSize: { xs: '14px', sm: '16px' } }}>КПП: 772501001</Typography>
+                        <Typography sx={{ fontSize: { xs: '14px', sm: '16px' } }}>ОГРН: 1237700147343</Typography>
+
+
+                        <SocialBlock className="banner-social-mobile" />
+
                     </Box>
 
-                    <SocialBlock className='banner-social-mobile'/>
 
                 </Box>
-                <Box sx={{visibility: 'hidden'}}>
+                <Box sx={{ visibility: 'hidden' }}>
                     {/*<iframe
                         className='map'
                         src="https://yandex.ru/map-widget/v1/?um=constructor%3A604ee8345ca097d664aa1c7764529b62cb0469a88360ead0ce5d5df219788165&amp;source=constructor"
@@ -56,11 +70,11 @@ export const ContactsBlock = () => {
                             src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=WKHUPZ27CZJJI685twB9KZ5f-NYF4kSq&width=100%&height=450&lang=ru_RU&sourceType=constructor&scroll=true"></script>*/}
 
                     <iframe
-                        className='map'
+                        className="map"
                         src="https://yandex.ru/map-widget/v1/?um=constructor%3AWKHUPZ27CZJJI685twB9KZ5f-NYF4kSq&amp;source=constructor"
                         frameBorder="0"></iframe>
                 </Box>
             </Box>
         </Box>
-    )
-}
+    );
+};
