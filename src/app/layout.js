@@ -12,20 +12,23 @@ import './globals.css';
 const montserrat = Montserrat({ subsets: ['latin', 'cyrillic'] });
 
 export const metadata = {
-    metadataBase: new URL('https://oms.mskdoctor.ru'),
+    metadataBase: new URL('https://msk-oms.vercel.app'),
     title: 'Госпитализация без полиса ОМС — помощь и размещение в стационаре',
     description: 'Организация госпитализации без полиса ОМС. Подбор стационара, оформление, медицинское сопровождение. Помощь в сложных ситуациях.',
     keywords: ['платная госпитализация без ОМС', 'экстренная платная госпитализация в москве', 'экстренная госпитализация в стационар платно'],
     other: {
-        ['yandex-verification']: 'bfbbb3def7ef9b1a',
+        ['yandex-verification']: 'df2b7800f6ae84d1',
     },
     openGraph: {
         title: 'Медицинская Сервисная Компания. Лечение без ОМС — платные медицинские услуги без очередей. 8 (499) 719-81-00, 24/7',
         description: 'Получите качественное лечение без полиса ОМС. Платный приём специалистов, диагностика и госпитализация без ожидания. Работаем с гражданами РФ и СНГ.',
         images: ['/images/banner2.webp'],
-        url: 'https://oms.mskdoctor.ru/',
+        url: 'https://msk-oms.vercel.app/',
         type: 'website',
         locale: 'ru_RU',
+    },
+    alternates: {
+        canonical: 'https://msk-oms.vercel.app',
     }
 };
 
