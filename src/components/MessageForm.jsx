@@ -53,7 +53,7 @@ export const MessageForm = ({handleClose, onSendForm, onError}) => {
             <Box sx={{display: 'flex', alignItems: 'center'}}>
                 <Checkbox checked={checked} onChange={handleChange} sx={{alignSelf: 'start'}}/>
                 <Typography sx={{fontSize: 11, lineHeight: '11px'}}>
-                    Нажимая кнопку «Отправить», я даю свое согласие на обработку моих персональных данных
+                    Нажимая кнопку «Отправить», я даю свое согласие на обработку моих персональных данных.
                 </Typography>
             </Box>
 
